@@ -17,9 +17,9 @@ class Gnuradio < Formula
   depends_on "numpy" => "python"
   depends_on "scipy" => "python"
   depends_on "docutils" => "python"
-  depends_on :fortran => :build
-  depends_on "swig" => :build
-  depends_on "cmake" => :build
+  depends_on "fortran" => "build"
+  depends_on "swig" => "build"
+  depends_on "cmake" => "build"
   depends_on "boost"
   depends_on "cppunit"
   depends_on "gsl"
@@ -33,7 +33,7 @@ class Gnuradio < Formula
   depends_on "pyqt" if build.with? "qt"
   depends_on "pyqwt" if build.with? "qt"
   depends_on "sphinx" if build.with? "docs"
-  depends_on "sphinx" => :python if build.with? "docs"
+  depends_on "sphinx" => "python" if build.with? "docs"
   depends_on "wxpython"
   depends_on "wxmac"
   depends_on "freetype"
